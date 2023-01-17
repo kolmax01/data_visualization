@@ -19,18 +19,19 @@ import {
 } from "react-router-dom";
 import MultilineTextFields from "./Components/CommentComponent";
 
+export const RouterElement = () => {
+  return (
+    <>
+      <ResponsiveAppBar />
+      <FooterComponent />
+      <Outlet />
+    </>
+  );
+};
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route
-      path="/"
-      element={
-        <>
-          <ResponsiveAppBar />
-          <FooterComponent />
-          <Outlet />
-        </>
-      }
-    >
+    <Route path="/data_visualization" element={<RouterElement />}>
       <Route index element={<MenuButtons />} />
       <Route path="dashboard" element={<DelayingAppearance />} />
       <Route path="singleComment" element={<MultilineTextFields />} />
