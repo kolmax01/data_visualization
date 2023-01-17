@@ -32,7 +32,7 @@ export default function MenuButtons() {
             display: "inline-flex",
             flexDirection: "row",
             alignItems: "center",
-            margin: "200px auto",
+            margin: "10px auto",
             gap: "20px",
             marginTop: "100px",
           }}

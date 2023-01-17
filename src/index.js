@@ -23,7 +23,7 @@ export const RouterElement = () => {
   return (
     <>
       <ResponsiveAppBar />
-      <FooterComponent />
+      {/* <FooterComponent /> */}
       <Outlet />
     </>
   );
